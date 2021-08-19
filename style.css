@@ -1,0 +1,316 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVIGATION */
+.myNavBar {
+  background-color: rgba(237, 193, 241, 1);
+}
+
+.navbarContents {
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 2px solid gray;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-family: "Yellowtail", cursive;
+}
+
+ul {
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+
+li:last-child {
+  border: none;
+}
+
+li:nth-child(3) {
+  border: none;
+}
+
+li:nth-child(4) {
+  border-left: 1px solid gray;
+}
+
+/* MAIN  */
+.main {
+  background-color: rgba(237, 193, 241, 1);
+}
+
+.mainContents {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.leftText {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(3, 50px);
+}
+
+.NewEra {
+  grid-column: 1 / 2;
+  grid-row: 1/4;
+  width: 200px;
+  height: 200px;
+  overflow-wrap: break-word;
+  font-family: "Wire One", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  color: black;
+  text-shadow: 10px 20px 7px black;
+}
+
+.Fashion {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  width: max-content;
+  height: 200px;
+  font-family: "Yellowtail", cursive;
+  font-size: 160px;
+  color: rgba(241, 22, 22, 0.911);
+  text-shadow: 2px 3px 2px black;
+}
+
+.image-box {
+  width: 35%;
+  border: 4px solid violet;
+  text-shadow: 1px black;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+/* PROMOTION */
+.Promotion {
+  background-color: rgb(205, 126, 212);
+}
+
+.promotionText {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Wire One", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  padding: 10px;
+}
+
+.gridContainer {
+  display: grid;
+  width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* SHOPS */
+.Shop {
+  background-color: rgba(237, 193, 241, 1);
+  padding-bottom: 50px;
+}
+
+.availableShops {
+  width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.brandCaption {
+  grid-column: span 3;
+  grid-row: 1;
+  font-family: "Wire One", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  padding: 10px;
+}
+
+.brandLogoContainers {
+  width: 100px;
+  height: 70px;
+  overflow: hidden;
+  border: 2px groove black;
+  background-color: white;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.brandLogoContainers > img {
+  width: 80%;
+  position: relative;
+  top: 16px;
+}
+
+/* APPLICATION */
+.App {
+  background-color: violet;
+}
+
+.appIntroduction {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.marketingText {
+  padding-left: 90px;
+  display: inline-block;
+}
+
+.marketingText h2 {
+  width: 400px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.google {
+  width: 120px;
+  padding-bottom: 10px;
+}
+
+.google img {
+  width: 100%;
+}
+
+.apple {
+  width: 120px;
+}
+
+.apple img {
+  width: 100%;
+}
+.marketingPicture {
+  width: 50%;
+  display: inline-block;
+}
+
+.marketingPicture img {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  color: gray;
+  background-color: black;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  padding: 30px;
+  padding-left: 0;
+  width: 200px;
+}
+
+table {
+  table-layout: auto;
+  width: 900px;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+td:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.socialLogoContainer {
+  display: inline-block;
+  padding: 5px;
+  width: 30px;
+  margin-right: 5px;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.socialLogoContainer img {
+  width: 100%;
+}
+
+/* COPYRIGHT */
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: rgba(211, 211, 211, 0.589);
+}
+
+.termsAndConditions {
+  display: grid;
+  width: 300px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.termsAndConditions a {
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+}
+
+.termsAndConditions a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 960px) {
+  .mainContents {
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-box {
+    margin-top: 150px;
+    margin-left: 250px;
+    width: 60%;
+    border: 4px solid violet;
+    text-shadow: 1px black;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .gridContainer {
+    display: grid;
+    width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
