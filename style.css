@@ -164,6 +164,11 @@ li:nth-child(4) {
   justify-self: center;
 }
 
+.brandLogoContainers:hover {
+  width: 120px;
+  height: 90px;
+}
+
 .brandLogoContainers > img {
   width: 80%;
   position: relative;
@@ -208,6 +213,12 @@ li:nth-child(4) {
 .apple img {
   width: 100%;
 }
+
+.google:hover,
+.apple :hover {
+  width: 130px;
+}
+
 .marketingPicture {
   width: 50%;
   display: inline-block;
